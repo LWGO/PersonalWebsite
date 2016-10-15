@@ -22,11 +22,9 @@ app.get('/resume', function(request, response) {
 });
 
 app.get('/projects', function(request, response) {
-  response.render('pages/projects');
+  response.render('pages/blog');
 });
 
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
-
-
