@@ -21,7 +21,7 @@ app.get('/resume', function(request, response) {
   response.render('pages/resume');
 });
 
-app.get('/projects', function(request, response) {
+app.get('/blog', function(request, response) {
   response.render('pages/blog');
 });
 
