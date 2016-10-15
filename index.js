@@ -17,8 +17,8 @@ app.get('/contact', function(request, response) {
   response.render('pages/contact');
 });
 
-app.get('/apibutton', function(request, response) {
-  response.render('pages/apibutton');
+app.get('/api', function(request, response) {
+  response.render('pages/api');
 });
 
 app.get('/blog', function(request, response) {
