@@ -1,22 +1,21 @@
 $(document).ready(function() {
   getAdsTargeting();
 });
-
 function searchTargeting() {
   var searchQuery = $('.search').val(); // grab value from search input
   getAdsTargeting(searchQuery);
 }
 
-function getAdsTargeting() {
-  var url = 'https://graph.facebook.com/v2.8/search?'; // url for the API 
+function getAdsTargeting(searchQuery) {
+  var url = 'https://graph.facebook.com/v2.8/search?'; // url for the API
   var params = {
     access_token: apiKey,
-    type: adinterest
+    type: 'adinterest'
   };
   if (searchQuery) {
     params.q = searchQuery;
   } else {
-    params.id = marketing
+    params.q = 'marketing'
   }
   $.ajax(url + $.param(params), {
     success: function (data) {
