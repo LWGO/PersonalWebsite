@@ -8,7 +8,7 @@ function searchTargeting() {
 }
 
 function getAdsTargeting() {
-  var url = 'https://graph.facebook.com/v2.8/search?type=adinterest&q=marketing&access_token=' + apiKey;
+  var url = 'https://graph.facebook.com/v2.8/search?'; // url for the API 
   var params = {
     access_token: apiKey,
     type: adinterest
