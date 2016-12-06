@@ -18,8 +18,13 @@ function getAdsTargeting(searchQuery) {
     params.q = 'marketing'
   }
   $.ajax(url + $.param(params), {
-    success: function (data) {
-      $('.target').text(data.name);
+    success: function (response.data) {
+      $.each(response.data) function(entry){
+      $('.name').text(data.name);
+      $('.audience_size').text(data.audience_size);
+    },
+    error: function (error) {
+    $('.error-message').text('An error occurred!');
     }
   });
 }
