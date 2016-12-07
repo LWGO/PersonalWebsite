@@ -1,6 +1,7 @@
 $(document).ready(function() {
   getAdsTargeting();
 });
+
 function searchTargeting() {
   var searchQuery = $('.search').val(); // grab value from search input
   getAdsTargeting(searchQuery);
@@ -27,6 +28,11 @@ function getAdsTargeting(searchQuery) {
 });
 }
 
+$("search").keyup(function(event){
+    if(event.keyCode == 13){
+        $("btnsearch").click();
+    }
+});
 
 // error: function (error) {
 // $('.error-message').text('An error occurred!');
