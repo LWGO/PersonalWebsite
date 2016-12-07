@@ -18,8 +18,8 @@ function getAdsTargeting(searchQuery) {
     params.q = 'marketing'
   }
   $.ajax(url + $.param(params), {
-    success: function (response.data) {
-      $.each(response.data) function(entry){
+    success: function (data) {
+      success: function (data) {
       $('.name').text(data.name);
       $('.audience_size').text(data.audience_size);
     },
