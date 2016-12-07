@@ -18,13 +18,27 @@ function getAdsTargeting(searchQuery) {
     params.q = 'marketing'
   }
   $.ajax(url + $.param(params), {
-    success: function (data) {
-      success: function (data) {
-      $('.name').text(data.name);
-      $('.audience_size').text(data.audience_size);
-    },
-    error: function (error) {
-    $('.error-message').text('An error occurred!');
+    success: function (entry) {
+      for (var i = 0; i < entry.data.length; i++) {
+     $('.name'+[i]).text(entry.data[i].name);
+     $('.audience_size'+[i]).text(entry.data[i].audience_size);
     }
-  });
+  }
+});
 }
+
+
+// error: function (error) {
+// $('.error-message').text('An error occurred!');
+// }
+// });
+
+// $.ajax(url + $.param(params), {
+//   success: function (entry) {
+//     for (var i = 0; i < entry.data.length; i++) {
+//    $('.name').text(entry.data[i].name);
+//    $('audience_size').text(entry.data[i].audience_size);
+//   }
+// }
+// });
+// }
