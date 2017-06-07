@@ -38,6 +38,7 @@ function key_down(e) {
     if(e.keyCode === 13) {
       searchTargeting();
     }
+  }
 
 // error: function (error) {
 // $('.error-message').text('An error occurred!');
