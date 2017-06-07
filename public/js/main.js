@@ -34,7 +34,7 @@ $("search").keyup(function(event){
     }
 });
 
-function key_down(e) {
+ function key_down(e) {
     if(e.keyCode === 13) {
       searchTargeting();
     }
