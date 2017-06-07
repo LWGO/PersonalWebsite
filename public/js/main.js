@@ -28,17 +28,15 @@ function getAdsTargeting(searchQuery) {
 });
 }
 
-$("search").keyup(function(event){
-    if(event.keyCode == 13){
-        $("btnsearch").click();
-    }
-});
+function handle(e){
+        if(e.keyCode === 13){
+            e.preventDefault(); // Ensure it is only this code that rusn
+            searchTargeting();
 
- function key_down(e) {
-    if(e.keyCode === 13) {
-      searchTargeting();
+        }
     }
-  }
+
+
 
 // error: function (error) {
 // $('.error-message').text('An error occurred!');

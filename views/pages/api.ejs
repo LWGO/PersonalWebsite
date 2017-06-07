@@ -18,10 +18,11 @@
     <div class="jumbotron">
       <h2>Facebook Targeting Research</h2>
       <div class="targeting-wrapper"></div>
-      <input class="search" id="searchbox" type="text" placeholder="marketing e.g." onkeydown="key_down()" autofocus/>
-      <button type="button" id="btnclick" onclick="searchTargeting()">
-        Search
-      </button>
+      
+      <input class="search" id="searchbox" type="text" placeholder="marketing e.g." onkeypress="handle(event)" autofocus/>
+      <input type="button" value="Search" id="btnclick" onclick="searchTargeting()">
+      
+    
     <h3 class="name1"></h3><h3 class="audience_size1"></h3>
     <h3 class="name2"></h3><h3 class="audience_size2"></h3>
     <h3 class="name3"></h3><h3 class="audience_size3"></h3>
