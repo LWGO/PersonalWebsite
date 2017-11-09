@@ -1,3 +1,5 @@
+
+
 body {
   padding-top: 70px;
   font-family: proxima-nova, sans-serif;
@@ -15,10 +17,6 @@ body {
 
 main {
   text-align: center;
-}
-
-.results {
-  
 }
 
 .jumbotron {
@@ -75,4 +73,29 @@ main {
 
 h1 {
   text-align: center;
+}
+
+td {
+  padding: 10px 20px 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th {
+  font-size: 24px;
+  padding-top: 30px;
+  text-align: left;
+}
+
+table {
+  margin: 0 auto;
+  width: 50%; 
+  padding-top: 30px;
+}
+
+html input[type="button"] {
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+  line-height: 1.2;
 }

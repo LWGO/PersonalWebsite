@@ -8,7 +8,7 @@ function searchTargeting() {
 }
 
 function getAdsTargeting(searchQuery) {
-  var url = 'https://graph.facebook.com/v2.9/search?'; // url for the API
+  var url = 'https://graph.facebook.com/v2.10/search?'; // url for the API
   var params = {
     access_token: apiKey,
     type: 'adinterest'
@@ -30,7 +30,7 @@ function getAdsTargeting(searchQuery) {
 
 function handle(e){
         if(e.keyCode === 13){
-            e.preventDefault(); // Ensure it is only this code that rusn
+            e.preventDefault(); // Ensure it is only this code that runs
             searchTargeting();
 
         }
